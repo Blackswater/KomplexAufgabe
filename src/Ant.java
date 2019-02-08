@@ -1,6 +1,6 @@
 public class Ant {
 
-    private Double sim;
+    private AntSim sim;
     private Vec pos;
     private Double angle;
     private Double speed;
@@ -10,7 +10,7 @@ public class Ant {
 
 
     //sim ist die die Größte der UI
-    public Ant(Double sim, Vec pos) {
+    public Ant(AntSim sim, Vec pos) {
         this.sim = sim;
         this.pos = pos != null ? pos : new Vec();
         this.angle = Math.random() * Math.PI * 2;
