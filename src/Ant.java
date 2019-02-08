@@ -61,7 +61,7 @@ public class Ant {
             reading = this.sniff(this.sim.layers.nesttrail);
         }
         this.sim.layers.foodtrail.mark(this.pos, this.stomach * 0.01);
-        this.sim.layers.nesttrail.mark(this.pos, this.homeRecency * 0,1);
+        this.sim.layers.nesttrail.mark(this.pos, this.homeRecency * 0.1);
         if(reading > 0) {
             this.angle += Config.instance.getAntTurnSpeed();
         }
